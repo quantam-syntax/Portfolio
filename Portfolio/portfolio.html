@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website of a CSE student at Amrita Vishwa Vidyapeetham.">
+    <title>Ganesh S | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-brand">GSK.</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="about.html" class="nav-link">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="hero-bg-shape shape-a"></div>
+        <div class="hero-bg-shape shape-b"></div>
+
+        <div class="hero-content">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name">Ganesh S</h1>
+            <h2 class="hero-role">Computer Science &amp; Engineering · Amrita Vishwa Vidyapeetham</h2>
+            <p class="hero-tagline">I build clean, accessible, and fast-loading web experiences.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+            </div>
+        </div>
+
+        <div class="hero-avatar-wrap">
+            <div class="hero-avatar" style="background: none;">
+                <img src="ganesh.jpeg" alt="Ganesh S"
+                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; position: absolute; z-index: 1;">
+                <div class="avatar-ring ring-1"></div>
+                <div class="avatar-ring ring-2"></div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-heading">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a first-year B.Tech student in Computer Science and Engineering at <strong>Amrita Vishwa
+                            Vidyapeetham</strong>, with 3 years of hands-on coding experience built well before college.
+                    </p>
+                    <p>I enjoy building tools that solve real problems — from AI-powered farm diagnostics to internal
+                        dashboards that help non-technical staff navigate complex systems without needing IT support.
+                    </p>
+                    <p>Outside of academics, you'll find me experimenting with new tech stacks, contributing to
+                        open-source, or debugging something at midnight.</p>
+                    <div class="about-details">
+                        <ul>
+                            <li><span class="detail-label">Name</span><span>Ganesh S</span></li>
+                            <li><span class="detail-label">College</span><span>Amrita Vishwa Vidyapeetham</span></li>
+                            <li><span class="detail-label">Year</span><span>1st Year, B.Tech CSE</span></li>
+                            <li><span class="detail-label">Email</span><span>ganeshsubhashkumar@gmail.com</span></li>
+                        </ul>
+                    </div>
+                    <a href="about.html" class="btn btn-outline">Full Profile →</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-num">5+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">3</span>
+                        <span class="stat-label">Years of Coding</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">1st</span>
+                        <span class="stat-label">Year Student</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-heading">Projects</h2>
+            <p class="section-subtitle">A selection of things I've built and shipped.</p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-thumb thumb-2">
+                        <div class="project-overlay">
+                            <a href="https://github.com/quantam-syntax/make-a-ton" target="_blank"
+                                rel="noopener noreferrer" class="overlay-link">View on GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">CNN</span>
+                            <span class="tag">FastAPI</span>
+                        </div>
+                        <h3 class="project-title">Crop Disease Detector</h3>
+                        <p class="project-desc">AI-powered tool that diagnoses crop diseases from field photos using a
+                            trained convolutional neural network, giving farmers instant, actionable results.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/quantam-syntax/make-a-ton" target="_blank"
+                                rel="noopener noreferrer">Source
+                                Code</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-thumb thumb-1">
+                        <div class="project-overlay">
+                            <a href="https://github.com/quantam-syntax" target="_blank" rel="noopener noreferrer"
+                                class="overlay-link">View on GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">Bash</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                        <h3 class="project-title">Server Rollback System</h3>
+                        <p class="project-desc">Automated rollback utility for Linux servers — snapshots application
+                            state before deployments and restores a clean working build with a single command on
+                            failure.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/quantam-syntax/" target="_blank"
+                                rel="noopener noreferrer">Source
+                                Code</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-thumb thumb-3">
+                        <div class="project-overlay">
+                            <a href="https://github.com/quantam-syntax/Techashy-NeuralFIx" target="_blank"
+                                rel="noopener noreferrer" class="overlay-link">View on GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">Tech Assistance Portal</h3>
+                        <p class="project-desc">A guided self-service web portal designed for non-technical staff —
+                            step-by-step troubleshooting flows, ticket creation, and instant IT FAQ lookup with no
+                            jargon.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/quantam-syntax/Techashy-NeuralFIx" target="_blank"
+                                rel="noopener noreferrer">Source
+                                Code</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-heading">Skills</h2>
+            <p class="section-subtitle">Technologies and tools I work with regularly.</p>
+
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Frontend</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level: 95%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level: 90%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level: 70%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Backend</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level: 85%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level: 75%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">SQL / PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level: 72%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level: 65%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Tools</h3>
+                    <ul class="skill-tags">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VS Code</li>
+                        <li>Linux</li>
+                        <li>Docker</li>
+                        <li>Figma</li>
+                        <li>Postman</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-heading">Contact</h2>
+            <p class="section-subtitle">Let's talk. I'm always open to interesting opportunities.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <span class="contact-icon">&#9993;</span>
+                        <div>
+                            <p class="contact-card-label">Email</p>
+                            <a href="mailto:ganeshsubhashkumar@gmail.com">ganeshsubhashkumar@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon">&#128279;</span>
+                        <div>
+                            <p class="contact-card-label">GitHub</p>
+                            <a href="https://github.com/quantam-syntax" target="_blank"
+                                rel="noopener noreferrer">github.com/quantam-syntax</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon">&#128101;</span>
+                        <div>
+                            <p class="contact-card-label">LinkedIn</p>
+                            <a href="https://l.linkedin.com/in/ganesh-s-a14b28375/" target="_blank"
+                                rel="noopener noreferrer">linkedin.com/in/ganesh-s-a14b28375</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="mailto:ganeshsubhashkumar@gmail.com" method="post"
+                    enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here…"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-brand">GSK.</p>
+            <p class="footer-note">
+                &copy; 2026 Ganesh S &nbsp;|&nbsp; Amrita Vishwa Vidyapeetham
+            </p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="about.html">Profile Page</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -75% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
