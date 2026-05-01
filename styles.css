@@ -14,7 +14,11 @@
 }
 
 body {
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: 
+    radial-gradient(circle at top left, rgba(99, 102, 241, 0.15), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(99, 102, 241, 0.08), transparent 40%);
+  background-attachment: fixed;
   color: var(--text);
   font-family: sans-serif;
   line-height: 1.6;
@@ -148,6 +152,11 @@ img {
   display: inline-block;
   border: 1px solid var(--accent);
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
 }
 
 .btn-primary {
@@ -155,14 +164,30 @@ img {
   color: #fff;
 }
 
+.btn-primary:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
 .btn-ghost {
   color: var(--accent);
+}
+
+.btn-ghost:hover {
+  background: var(--accent);
+  color: #fff;
 }
 
 .btn-outline {
   color: var(--text);
   border: 1px solid var(--border);
   margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .hero-avatar {
@@ -209,6 +234,12 @@ img {
   padding: 20px;
   border-radius: 5px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .stat-num {
@@ -230,6 +261,12 @@ img {
   border: 1px solid var(--border);
   border-radius: 5px;
   overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
 }
 
 .project-thumb {
@@ -365,6 +402,13 @@ img {
   background: var(--surface);
   padding: 15px;
   border-radius: 5px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.contact-card:hover {
+  transform: translateX(5px);
+  border-color: var(--accent);
 }
 
 .contact-icon {
